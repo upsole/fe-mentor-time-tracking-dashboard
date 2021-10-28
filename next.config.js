@@ -1,4 +1,4 @@
 module.exports = {
   reactStrictMode: true,
-  assetPrefix: "/fe-mentor-time-tracking-dashboard/"
-}
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
+};
