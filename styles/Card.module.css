@@ -42,7 +42,7 @@
 }
 
 .person_section h1 {
-  font-size: 2.5rem;
+  font-size: var(--fs-person);
 }
 
 .person_buttons {
@@ -147,9 +147,6 @@
     margin-left: 2em;
   }
 
-  .person_section h1 {
-    font-size: 1.2rem;
-  }
 
   .person_buttons {
     flex-direction: row;
@@ -164,45 +161,34 @@
   }
 
   .card_text h1 {
-    font-size: 2rem;
+    font-size: var(--fs-title);
   }
 }
 
 @media (max-width: 1250px) {
-  .card_text h1 {
-    font-size: 2rem;
-  }
-
-
-  .card_text p {
-    font-size: 0.8rem;
-  }
-
-  .card_title img{
+  .card_title img {
     display: none;
   }
 
   .card_title h3 {
-    font-size: 0.8rem;
+    font-size: var(--fs-500);
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 630px) {
   .person_buttons {
     flex-direction: row;
     justify-content: space-between;
   }
 
   /*.card_text {*/
-    /*[>flex-direction: row;<]*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: flex-end;*/
+  /*[>flex-direction: row;<]*/
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*align-items: flex-end;*/
   /*}*/
 
   .card_text h1 {
     font-size: 1.2rem;
   }
-
-
 }

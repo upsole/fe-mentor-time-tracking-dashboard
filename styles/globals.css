@@ -8,13 +8,29 @@
   --clr-blue-very-dark: hsl(226, 43%, 10%);
   --clr-blue-desaturated: hsl(235, 45%, 61%);
   --clr-pale-blue: hsl(236, 100%, 87%);
+
+  --fs-title: 3rem;
+  --fs-person: 2.5rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-base: 0.9rem;
+}
+
+@media (min-width: 40em) {
+  :root {
+    --fs-title: 3rem;
+    --fs-person: 2.5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25;
+    --fs-base: 1rem;
+  }
 }
 
 html,
 body {
   font-family: "Rubik";
 
-  font-size: 16px;
+  font-size: var(--fs-base);
   color: #fff;
 
   background-color: var(--clr-blue-very-dark);
@@ -27,7 +43,7 @@ body {
 
 h1 {
   font-weight: 300;
-  font-size: 3.5rem;
+  font-size: var(--fs-title);
 }
 
 h3 {
